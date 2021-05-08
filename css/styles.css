@@ -1,28 +1,4 @@
 /* Hoja de estilos */
-@font-face {
-  font-family: charter;
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/charter-regular.otf');
-}
-@font-face {
-  font-family: charter;
-  font-style: italic;
-  font-weight: normal;
-  src: url('../fonts/charter-italic.otf');
-}
-@font-face {
-  font-family: charter;
-  font-style: normal;
-  font-weight: bold;
-  src: url('../fonts/charter-bold.otf');
-}
-@font-face {
-  font-family: charter;
-  font-style: italic;
-  font-weight: bold;
-  src: url('../fonts/charter-bold-italic.otf');
-}
 
 :root {
   font-size: 16px;
@@ -34,7 +10,8 @@
 body {
   color: var(--gray30);
   /* font-family: system-ui; */
-  font-family: charter;
+  /* font-family: charter; */
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
