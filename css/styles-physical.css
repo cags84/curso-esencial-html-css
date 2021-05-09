@@ -152,8 +152,25 @@ blockquote span::before {
 }
 
 
+/* Componente Base, podria pintante el fondo */
+.main {
+}
+
+/* Wrapper, tiene la responsabilidad de poner un ancho y de centar, delimita las fronteras de tu contenido. */
+
+.wrapper {
+  width: 902px;
+  margin: 0 auto;
+}
+
+/* Contenido,  */
+.main-content {
+  padding: 20px;
+}
+
+
 /* Debug */
-.debug-red {
+.debug {
   /* box-shadow: 0 0 0 1px red; */
   /* border: 1px solid red; */
   outline: 1px solid red !important;
