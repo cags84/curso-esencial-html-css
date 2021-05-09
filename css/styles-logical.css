@@ -90,6 +90,9 @@ hr {
 .section-content img {
   margin-block-start: 40px;
   display: block;
+  /* Logico */
+  /* max-width: 100%; */
+  max-inline-size: 100%;
 }
 
 .section-content h3 {
@@ -115,6 +118,24 @@ blockquote {
   background-color: #3A3539;
   border-radius: 8px;
   padding: 24px;
+}
+
+/* Logicos */
+
+.main {
+
+}
+
+.wrapper {
+  margin: 0 auto;
+  /* inline-size: 902px; */
+  max-inline-size: 902px;
+  /* block-size: 100px;
+  overflow: hidden; */
+}
+
+.main-content {
+
 }
 
 .main hr {
