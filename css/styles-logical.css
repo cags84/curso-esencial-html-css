@@ -19,30 +19,32 @@ body {
 }
 
 .header {
-  position: sticky;
-  inset-block-start: -45px;
+  /* position: sticky;
+  inset-block-start: -45px; */
 }
 
 .header-content {
-  position: relative;
-  inset-block-start: 65px;
+  /* position: relative;
+  inset-block-start: 65px; */
+  padding-inline: 20px;
 }
 
 header {
+  margin-block-start: 20px;
   color: var(--white30);
   font-size: 14px;
-  position: absolute;
+  /* position: absolute; */
   /* top */
-  inset-block-start: 0;
+  /* inset-block-start: 0; */
   /* left */
-  inset-inline-start: -208px;
+  /* inset-inline-start: -208px; */
   /* bottom */
-  inset-inline-end: 0;
+  /* inset-inline-end: 0; */
   /* right */
-  insret-inline-end: 0;
+  /* insret-inline-end: 0; */
 
   /* with max */
-  inline-size: 188px;
+  /* inline-size: 188px; */
 }
 
 header li {
@@ -66,8 +68,8 @@ nav details summary {
 
 h1 {
   /* font-size: 3.75em; */
-  font-size: 60px;
-  margin-block-start: 64px;
+  font-size: 40px;
+  margin-block-start: 20px;
   margin-block-end: 16px;
 }
 
@@ -106,7 +108,7 @@ hr {
 
 .hero {
   width: 100%;
-  height: 350px;
+  block-size: 50px;
   background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);;
 }
 
@@ -238,3 +240,53 @@ blockquote p {
 
 
 /* Media Querys */
+/*
+@media screen and (min-width: 700px) {
+  Abajo de 700px no se cumple la condición
+
+@media screen and (max-width: 700px) {
+  Arriba de 700px no se cumple la condición
+
+  Con min-width -> Pensamos en los mobiles primero.
+  Con max-width -> Pensamos en los desktop primero.
+
+  Siempre se debe trabajar con mobile width.
+
+*/
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    block-size: 350px;
+  }
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+  
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+  
+  header {
+    position: absolute;
+    /* top */
+    inset-block-start: 0;
+    /* left */
+    inset-inline-start: -208px;
+    /* bottom */
+    /* inset-inline-end: 0; */
+    /* right */
+    /* insret-inline-end: 0; */
+  
+    /* with max */
+    inline-size: 188px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+}
