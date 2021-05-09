@@ -8,6 +8,10 @@
   --gray10: #616161;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--gray30);
   /* font-family: system-ui; */
@@ -19,6 +23,12 @@ body {
 header {
   color: var(--gray10);
   font-size: 14px;
+  /* top rigth bottom left z-index */
+  position: absolute;
+  top: 64px;
+  left: -232px;
+  width: 188px;
+  z-index: 1;
 }
 
   header a {
@@ -31,8 +41,13 @@ header {
     color: var(--gray30);
   }
 
+  header li {
+    margin-bottom: 16px;
+  }
+
 nav details summary {
   font-weight: bold;
+  line-height: 24px;
 }
 
 h1 {
@@ -40,6 +55,7 @@ h1 {
   font-size: 3.75em;
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
   /* width: 400px;
   height: 400px;
   padding: 40px; */
@@ -70,6 +86,7 @@ h3 {
   padding: 20px;
   border: 1px solid red;
   box-sizing: border-box; */
+  position: relative;
 }
 
 a {
@@ -135,7 +152,7 @@ blockquote span::before {
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 /* Pseudoelementos */
@@ -145,10 +162,14 @@ blockquote span::before {
 
 .section-content h3::after {
   content: '';
-  display: inline-block;
-  width: 32px;
+  width: 80px;
   height: 4px;
+  margin-top: 4px;
   background: var(--gray21);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 
@@ -165,9 +186,18 @@ blockquote span::before {
 
 /* Contenido,  */
 .main-content {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
+.header-content {
+  position: relative;
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+}
 
 /* Debug */
 .debug {
