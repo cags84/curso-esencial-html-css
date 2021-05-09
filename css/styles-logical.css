@@ -18,13 +18,36 @@ body {
   margin: 0;
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
+}
+
 header {
   color: var(--white30);
   font-size: 14px;
+  position: absolute;
+  /* top */
+  inset-block-start: 0;
+  /* left */
+  inset-inline-start: -208px;
+  /* bottom */
+  inset-inline-end: 0;
+  /* right */
+  insret-inline-end: 0;
+
+  /* with max */
+  inline-size: 188px;
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
@@ -152,3 +175,66 @@ blockquote p {
 .main hr {
   display: none;
 }
+
+
+/* slider */
+.slider {
+
+}
+
+.slider-container {
+  /* block-size: 100px; */
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+.form input {
+  inline-size: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--white30);
+  background-color: #251F24;
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: var(--white30);
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+
+.form input[type="submit"] {
+  background-color: #157EFB;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20)
+}
+
+
+/* Media Querys */
